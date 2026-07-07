@@ -76,7 +76,6 @@ function renderDisplay() {
   const ss = String(state.currentSeconds).padStart(2, '0');
   elMinutes.value = mm;
   elSeconds.value = ss;
-  document.title = `${mm}:${ss} - Timer`;
 }
 
 function renderControls() {
