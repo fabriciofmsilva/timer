@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="timer-container">
+
+    <div class="timer-display"
+         role="timer"
+         aria-live="polite"
+         aria-atomic="true"
+         aria-label="Contagem regressiva">
+      <input class="timer-input" id="input-minutes"
+             type="text" inputmode="numeric"
+             maxlength="2" value="05"
+             aria-label="Minutos">
+      <span class="timer-separator" aria-hidden="true">:</span>
+      <input class="timer-input" id="input-seconds"
+             type="text" inputmode="numeric"
+             maxlength="2" value="00"
+             aria-label="Segundos">
+    </div>
+
+    <div class="timer-controls">
+      <button id="btn-start" class="btn btn--primary"
+              aria-keyshortcuts="Space">Iniciar</button>
+      <button id="btn-reset" class="btn btn--secondary"
+              aria-keyshortcuts="Escape">Zerar</button>
+      <p><code>espaço</code> para iniciar/parar, <code>esc</code> para zerar</p>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
